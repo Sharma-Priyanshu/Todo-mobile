@@ -55,7 +55,14 @@
     <div class="pop-up">
         <p id="add-list">Add New List</p>
         <input type="text" id="text" placeholder="New List Name">
-        <button class="pop-up-btn">ADD</button>
+        <button class="pop-up-btn" onclick= 'window.location.href = "index.html"'>ADD</button>
     </div>
   </body>
+  <script>
+  let popUpBtn =  document.getElementsByClassName("pop-up-btn")[0]
+  let text =  document.getElementById("text")
+  popUpBtn.addEventListener('click', ()=>{
+    alert("New List is Added: " + text.value)
+  })
+  </script>
 </html>
